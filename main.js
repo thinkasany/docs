@@ -9,6 +9,12 @@ window.$docsify = {
   lastModifiedBranch: 'master',
   loadSidebar: sidebar(),
   lastModifiedText: '最近更新时间：',
+  logo: '/images/logo.png',
+  copyCode: {
+    buttonText: 'Copy to clipboard',
+    errorText: 'Error',
+    successText: 'Copied',
+  },
   search: {
     depth: 2,
     hideOtherSidebarContent: true,
