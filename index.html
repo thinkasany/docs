@@ -7,7 +7,16 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/gitalk/dist/gitalk.css" />
+  <style>
+    .giscus {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -15,26 +24,29 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-lastmodified/index.min.js"></script>
-  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
-    const gitalk = new Gitalk({
-      clientID: '398fec98052155b3a71a',
-      clientSecret: '49cc6e1d3a8b685dd12f2be2c3f2a7cb1f5490c9',
-      repo: 'docs',
-      owner: 'thinkasany',
-      admin: ['thinkasany'],
-      number: 2,
-      distractionFreeMode: true,
-      labels: ['talk'],
-      title: 'docs',
-      perPage: 15,
-  });
   </script>
-    <script src="https://utteranc.es/client.js"
+   <!-- 也许issue没有discussion合适，先注释了 -->
+  <!-- <script 
+    src="https://utteranc.es/client.js"
     repo="thinkasany/docs"
     issue-term="pathname"
     theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script> -->
+  <script src="https://giscus.app/client.js"
+    data-repo="thinkasany/docs"
+    data-repo-id="R_kgDOKXpjaA"
+    data-category="Ideas"
+    data-category-id="DIC_kwDOKXpjaM4CZl9B"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
     crossorigin="anonymous"
     async>
   </script>

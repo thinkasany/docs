@@ -5,8 +5,10 @@ window.addEventListener("hashchange", () => {
 });
 window.$docsify = {
   name: "",
-  repo: "",
+  repo: "thinkasany/docs",
+  lastModifiedBranch: 'master',
   loadSidebar: sidebar(),
+  lastModifiedText: '最近更新时间：',
   search: {
     depth: 2,
     hideOtherSidebarContent: true,
