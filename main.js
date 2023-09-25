@@ -4,7 +4,7 @@ window.addEventListener('hashchange', () => {
   window.$docsify.loadSidebar = sidebar();
 });
 window.$docsify = {
-  name: '',
+  name: 'docs',
   repo: 'thinkasany/docs',
   lastModifiedBranch: 'master',
   loadSidebar: sidebar(),
@@ -13,7 +13,7 @@ window.$docsify = {
   copyCode: {
     buttonText: 'Copy to clipboard',
     errorText: 'Error',
-    successText: 'Copied',
+    successText: 'Copied'
   },
   search: {
     depth: 2,
@@ -53,10 +53,46 @@ window.$docsify = {
         return github + html;
       });
       hook.doneEach(() => {
+        const theme = localStorage.getItem('DARK_LIGHT_THEME') === 'light' ? 'light' : 'noborder_dark';
+        var path = vm.route.path === '/' ? '/index' : vm.route.path;
+        // remove first '/'
+
+        // console.log(path);
+        // convert url to plain text
+        path = decodeURI(path);
+        console.log(vm.route.path);
+
+        console.log(path);
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.setAttribute('src', 'https://giscus.app/client.js');
+        dsq.setAttribute('data-repo', 'thinkasany/docs');
+        dsq.setAttribute('data-repo-id', 'R_kgDOKXpjaA');
+        dsq.setAttribute('data-category', 'Announcements');
+        dsq.setAttribute('data-category-id', 'DIC_kwDOKXpjaM4CZl8-');
+        dsq.setAttribute('data-mapping', 'specific');
+        dsq.setAttribute('data-term', path);
+        dsq.setAttribute('data-reactions-enabled', '1');
+        dsq.setAttribute('data-emit-metadata', '0');
+        dsq.setAttribute('data-input-position', 'bottom');
+        dsq.setAttribute('data-theme', theme);
+        dsq.setAttribute('data-lang', 'zh-CN');
+        dsq.setAttribute('data-loading', 'lazy');
+        dsq.setAttribute('crossorigin', 'anonymous');
+        // remove last iframe border
+        var iframes = document.getElementsByTagName('iframe');
+        // console.log(iframes);
+        // iframes[iframes.length - 1].style.border = "none";
+        // append to last second
+        document.getElementById('main').insertBefore(dsq, document.getElementById('main').lastChild);
+
+        console.log(document.getElementById('main'));
+        console.log(dsq);
         document.getElementById('docsify-darklight-theme').addEventListener('click', () => {
-          const theme = localStorage.getItem('DARK_LIGHT_THEME') === 'light' ? 'light' : 'noborder_dark';
           const frame = document.querySelector('.giscus-frame');
           frame.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+          return;
         });
       });
     }
