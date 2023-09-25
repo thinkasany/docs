@@ -1,0 +1,24 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "> An awesome project. ## 测试",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --config .prettierrc.js --write './**/*.{js,ts,scss,css,md,json}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,md,sql}": "prettier --write"
+  }
+}

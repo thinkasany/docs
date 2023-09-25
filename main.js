@@ -1,8 +1,8 @@
-const isRoot = () => ['', '#/'].includes(location.hash)
-const sidebar = () => (isRoot() ? false : 'summary.md')
+const isRoot = () => ['', '#/'].includes(location.hash);
+const sidebar = () => (isRoot() ? false : 'summary.md');
 window.addEventListener('hashchange', () => {
-  window.$docsify.loadSidebar = sidebar()
-})
+  window.$docsify.loadSidebar = sidebar();
+});
 window.$docsify = {
   name: '',
   repo: 'thinkasany/docs',
@@ -41,27 +41,18 @@ window.$docsify = {
   plugins: [
     (hook, vm) => {
       hook.beforeEach(html => {
-        const { file } = vm.route
-        const url = `https://github.com/thinkasany/docs/blob/master${file}`
-        console.log(url)
-        const github = `在 [github](${url}) 编辑\n\n`
-        return github + html
-      })
+        const { file } = vm.route;
+        const url = `https://github.com/thinkasany/docs/blob/master/${file}`;
+        const github = `在 [github](${url}) 编辑\n\n`;
+        return github + html;
+      });
       hook.doneEach(() => {
-        document
-          .getElementById('docsify-darklight-theme')
-          .addEventListener('click', () => {
-            const theme =
-            localStorage.getItem('DARK_LIGHT_THEME') === 'light'
-              ? 'light'
-              : 'noborder_dark'
-            const frame = document.querySelector('.giscus-frame')
-            frame.contentWindow.postMessage(
-              { giscus: { setConfig: { theme } } },
-              'https://giscus.app'
-            )
-          })
-      })
+        document.getElementById('docsify-darklight-theme').addEventListener('click', () => {
+          const theme = localStorage.getItem('DARK_LIGHT_THEME') === 'light' ? 'light' : 'noborder_dark';
+          const frame = document.querySelector('.giscus-frame');
+          frame.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+        });
+      });
     }
   ]
-}
+};
