@@ -1,4 +1,5 @@
 - Nest 通关秘籍
-  - [37.MySQL 的事务和隔离级别](/docs/nest/37/37.md) 
+  - [36.SQL 综合练习](/docs/nest/36/36.md)
+  - [37.MySQL 的事务和隔离级别](/docs/nest/37/37.md)
   - [0001.两数之和](/docs/typeorm/1.md)
   - [0002.两数相加](/docs/typeorm/2.md)

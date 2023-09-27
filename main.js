@@ -6,6 +6,7 @@ window.addEventListener('hashchange', () => {
 window.$docsify = {
   name: 'docs',
   repo: 'thinkasany/docs',
+  subMaxLevel: 2,
   lastModifiedBranch: 'master',
   loadSidebar: sidebar(),
   lastModifiedText: '最近更新时间：',
