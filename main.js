@@ -2,13 +2,13 @@ const isRoot = () => ['', '#/'].includes(location.hash);
 const isDev = () => location.host.includes('localhost');
 const sidebar = () => {
   if (isRoot()) {
-    return false
+    return false;
   }
   if (location.hash.includes('mytools')) {
-    return 'tools_summary.md'
+    return 'tools_summary.md';
   }
-  return 'summary.md'
-}
+  return 'summary.md';
+};
 window.addEventListener('hashchange', () => {
   window.$docsify.loadSidebar = sidebar();
 });
