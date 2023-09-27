@@ -1,6 +1,14 @@
 const isRoot = () => ['', '#/'].includes(location.hash);
 const isDev = () => location.host.includes('localhost');
-const sidebar = () => (isRoot() ? false : 'summary.md');
+const sidebar = () => {
+  if (isRoot()) {
+    return false
+  }
+  if (location.hash.includes('mytools')) {
+    return 'tools_summary.md'
+  }
+  return 'summary.md'
+}
 window.addEventListener('hashchange', () => {
   window.$docsify.loadSidebar = sidebar();
 });
