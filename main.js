@@ -53,7 +53,7 @@ window.$docsify = {
         const replacedContent = html.replace(
           /<img\s+src="/g,
           '<img src="https://fastly.jsdelivr.net/gh/thinkasany/docs@master'
-          );
+        );
         // https://raw.githubusercontent.com
         const url = `https://github.com/thinkasany/docs/blob/master/${file}`;
         const github = `在 [github](${url}) 编辑\n\n`;
