@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "start": "docsify serve --open",
     "lint-staged": "lint-staged",
     "prettier": "prettier --config .prettierrc.js --write './**/*.{js,ts,scss,css,md,json}'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +21,8 @@
   },
   "lint-staged": {
     "*.{js,ts,md,sql}": "prettier --write"
+  },
+  "dependencies": {
+    "docsify-cli": "^4.4.4"
   }
 }
