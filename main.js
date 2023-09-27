@@ -1,4 +1,5 @@
 const isRoot = () => ['', '#/'].includes(location.hash);
+const isDev = () => location.host.includes('localhost');
 const sidebar = () => (isRoot() ? false : 'summary.md');
 window.addEventListener('hashchange', () => {
   window.$docsify.loadSidebar = sidebar();
@@ -49,9 +50,14 @@ window.$docsify = {
     (hook, vm) => {
       hook.beforeEach(html => {
         const { file } = vm.route;
+        const replacedContent = html.replace(
+          /<img\s+src="/g,
+          '<img src="https://raw.githubusercontent.com/thinkasany/docs/master'
+        );
         const url = `https://github.com/thinkasany/docs/blob/master/${file}`;
         const github = `在 [github](${url}) 编辑\n\n`;
-        return github + html;
+        console.log(replacedContent);
+        return github + `${isDev() ? html : replacedContent}`;
       });
       hook.doneEach(() => {
         const theme = localStorage.getItem('DARK_LIGHT_THEME') === 'light' ? 'light' : 'noborder_dark';
