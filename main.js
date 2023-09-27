@@ -54,16 +54,11 @@ window.$docsify = {
       });
       hook.doneEach(() => {
         const theme = localStorage.getItem('DARK_LIGHT_THEME') === 'light' ? 'light' : 'noborder_dark';
-        var path = vm.route.path === '/' ? '/index' : vm.route.path;
-        // remove first '/'
+        let path = vm.route.path === '/' ? '/index' : vm.route.path;
 
-        // console.log(path);
-        // convert url to plain text
         path = decodeURI(path);
-        console.log(vm.route.path);
 
-        console.log(path);
-        var dsq = document.createElement('script');
+        const dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
         dsq.setAttribute('src', 'https://giscus.app/client.js');
@@ -80,15 +75,8 @@ window.$docsify = {
         dsq.setAttribute('data-lang', 'zh-CN');
         dsq.setAttribute('data-loading', 'lazy');
         dsq.setAttribute('crossorigin', 'anonymous');
-        // remove last iframe border
-        var iframes = document.getElementsByTagName('iframe');
-        // console.log(iframes);
-        // iframes[iframes.length - 1].style.border = "none";
-        // append to last second
-        document.getElementById('main').insertBefore(dsq, document.getElementById('main').lastChild);
 
-        console.log(document.getElementById('main'));
-        console.log(dsq);
+        document.getElementById('main').insertBefore(dsq, document.getElementById('main').lastChild);
         document.getElementById('docsify-darklight-theme').addEventListener('click', () => {
           const frame = document.querySelector('.giscus-frame');
           frame.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
