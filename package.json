@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "docsify serve --open",
+    "lint": "prettier --config .prettierrc.js --write './**/*.{js,ts,scss,css,md,json}'",
     "lint-staged": "lint-staged",
     "prettier": "prettier --config .prettierrc.js --write './**/*.{js,ts,scss,css,md,json}'",
     "test": "echo \"Error: no test specified\" && exit 1"
