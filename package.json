@@ -25,5 +25,10 @@
   },
   "dependencies": {
     "docsify-cli": "^4.4.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
