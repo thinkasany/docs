@@ -1,4 +1,5 @@
 - Nest 通关秘籍
+  - [32.SQL 查询语句的所有语法和函数](/docs/nest/32/32.md)
   - [36.SQL 综合练习](/docs/nest/36/36.md)
   - [37.MySQL 的事务和隔离级别](/docs/nest/37/37.md)
   - [todo...](/docs/typeorm/1.md)
