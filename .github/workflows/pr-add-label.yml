@@ -18,7 +18,7 @@ jobs:
       - name: Run add-label Action
         uses: thinkasany/pr-label-action@master
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.ACTION_TOKEN }}
           pr_number: ${{ env.PR_NUMBER }}
           organize_name: "doocs"
           team_name: "leetcode-algorithm"
