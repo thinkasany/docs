@@ -5,4 +5,6 @@
   - [35.子查询和 EXISTS](/docs/nest/35/35.md)
   - [36.SQL 综合练习](/docs/nest/36/36.md)
   - [37.MySQL 的事务和隔离级别](/docs/nest/37/37.md)
+  - [40.快速掌握 TypeORM](/docs/nest/40/40.md)
+  - [41.TypeORM 一对一的映射和关联 CRUD](/docs/nest/41/41.md)
   - [todo...](/docs/typeorm/1.md)
