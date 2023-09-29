@@ -1,5 +1,8 @@
 - Nest 通关秘籍
   - [32.SQL 查询语句的所有语法和函数](/docs/nest/32/32.md)
+  - [33.一对一、join 查询、级联方式](/docs/nest/33/33.md)
+  - [34.一对多、多对多关系的表设计](/docs/nest/34/34.md)
+  - [35.子查询和 EXISTS](/docs/nest/35/35.md)
   - [36.SQL 综合练习](/docs/nest/36/36.md)
   - [37.MySQL 的事务和隔离级别](/docs/nest/37/37.md)
   - [todo...](/docs/typeorm/1.md)
