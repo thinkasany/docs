@@ -9,4 +9,5 @@
   - [44.TypeORM 一对一的映射和关联 CRUD](/docs/nest/44/44.md)
   - [45.TypeORM 一对多的映射和关联 CRUD](/docs/nest/45/45.md)
   - [46.TypeORM 多对多的映射和关联 CRUD](/docs/nest/46/46.md)
+  - [47.在 Nest 里集成 TypeORM](/docs/nest/47/47.md)
   - [todo...](/docs/typeorm/1.md)
