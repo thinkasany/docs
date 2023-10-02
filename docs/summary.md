@@ -7,4 +7,5 @@
   - [37.MySQL 的事务和隔离级别](/docs/nest/37/37.md)
   - [43.快速掌握 TypeORM](/docs/nest/43/43.md)
   - [44.TypeORM 一对一的映射和关联 CRUD](/docs/nest/44/44.md)
+  - [45.TypeORM 一对多的映射和关联 CRUD](/docs/nest/45/45.md)
   - [todo...](/docs/typeorm/1.md)
