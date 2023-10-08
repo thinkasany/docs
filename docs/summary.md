@@ -12,4 +12,5 @@
   - [47.在 Nest 里集成 TypeORM](/docs/nest/47/47.md)
   - [50.快速入门 Redis](/docs/nest/50/50.md)
   - [51.在 Nest 里操作 Redis](/docs/nest/51/51.md)
+  - [54.MySQL + TypeORM + JWT 实现登录注册](/docs/nest/54/54.md)
   - [todo...](/docs/typeorm/1.md)
