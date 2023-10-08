@@ -1,4 +1,5 @@
 - Nest 通关秘籍
+  - [前言](/docs/nest/index.md)
   - [32.SQL 查询语句的所有语法和函数](/docs/nest/32/32.md)
   - [33.一对一、join 查询、级联方式](/docs/nest/33/33.md)
   - [34.一对多、多对多关系的表设计](/docs/nest/34/34.md)
@@ -12,4 +13,5 @@
   - [47.在 Nest 里集成 TypeORM](/docs/nest/47/47.md)
   - [50.快速入门 Redis](/docs/nest/50/50.md)
   - [51.在 Nest 里操作 Redis](/docs/nest/51/51.md)
+  - [54.MySQL + TypeORM + JWT 实现登录注册](/docs/nest/54/54.md)
   - [todo...](/docs/typeorm/1.md)
