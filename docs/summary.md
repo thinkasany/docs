@@ -15,4 +15,5 @@
   - [51.在 Nest 里操作 Redis](/docs/nest/51/51.md)
   - [54.MySQL + TypeORM + JWT 实现登录注册](/docs/nest/54/54.md)
   - [55.基于 ACL 实现权限控制](/docs/nest/55/55.md)
+  - [56.基于 RBAC 实现权限控制](/docs/nest/56/56.md)
   - [todo...](/docs/typeorm/1.md)
