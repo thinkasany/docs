@@ -19,4 +19,5 @@
   - [55.基于 ACL 实现权限控制](/docs/nest/55/55.md)
   - [56.基于 RBAC 实现权限控制](/docs/nest/56/56.md)
   - [pay](/docs/nest/pay/1.md)
+  - [sso](/docs/nest/sso/1.md)
   - [todo...](/docs/typeorm/1.md)
