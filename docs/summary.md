@@ -1,6 +1,7 @@
 - Nest 通关秘籍
   - [前言](/docs/nest/index.md)
   - [5.IOC 解决了什么痛点问题？](/docs/nest/5/5.md)
+  - [24.Nest 如何使用 multer 实现文件上传](/docs/nest/24/24.md)
   - [32.SQL 查询语句的所有语法和函数](/docs/nest/32/32.md)
   - [33.一对一、join 查询、级联方式](/docs/nest/33/33.md)
   - [34.一对多、多对多关系的表设计](/docs/nest/34/34.md)
