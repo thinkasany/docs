@@ -2,6 +2,7 @@
   - [前言](/docs/nest/index.md)
   - [5.IOC 解决了什么痛点问题？](/docs/nest/5/5.md)
   - [7.使用多种 Provider，灵活注入对象](/docs/nest/7/1.md)
+  - [9.AOP 架构有什么好处？🔥](/docs/nest/9/1.md)
   - [17.Nest 的 Middleware](/docs/nest/17/1.md)
   - [18.RxJS 和 Interceptor](/docs/nest/18/1.md)
   - [19.内置 Pipe 和自定义 Pipe](/docs/nest/19/1.md)
