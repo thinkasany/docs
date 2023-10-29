@@ -4,4 +4,9 @@
 
 # 拓展
 
-💄 目前额外拓展了 ali-oss，alipay 的内容
+目前额外拓展的内容如下：
+
+- 💄 [ali-oss](https://thinkasany.github.io/docs/#/docs/nest/24/24?id=ali-oss)
+- 💄 [ali-pay](https://thinkasany.github.io/docs/#/docs/nest/pay/1)
+- 💄 [wechat-pay](https://thinkasany.github.io/docs/#/docs/nest/pay/wechat)
+- 💄 [wechat-pay](https://thinkasany.github.io/docs/#/docs/nest/sso/1)

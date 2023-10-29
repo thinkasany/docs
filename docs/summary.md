@@ -1,5 +1,8 @@
 - Nest 通关秘籍
   - [前言](/docs/nest/index.md)
+  - [pay-alipay-sendbox](/docs/nest/pay/1.md)
+  - [pay-wechat](/docs/nest/pay/wechat.md)
+  - [sso-单点登录](/docs/nest/sso/1.md)
   - [5.IOC 解决了什么痛点问题？](/docs/nest/5/5.md)
   - [7.使用多种 Provider，灵活注入对象](/docs/nest/7/1.md)
   - [9.AOP 架构有什么好处？🔥](/docs/nest/9/1.md)
@@ -23,6 +26,4 @@
   - [54.MySQL + TypeORM + JWT 实现登录注册](/docs/nest/54/54.md)
   - [55.基于 ACL 实现权限控制](/docs/nest/55/55.md)
   - [56.基于 RBAC 实现权限控制](/docs/nest/56/56.md)
-  - [pay](/docs/nest/pay/1.md)
-  - [sso](/docs/nest/sso/1.md)
   - [todo...](/docs/typeorm/1.md)
