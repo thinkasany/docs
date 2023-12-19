@@ -13,6 +13,8 @@ CMD ["docsify", "serve", "."]
 
 # docker ps -a
 
-# ddocker build -f Dockerfile -t docsify/docs .
+# docker build -f Dockerfile -t docsify/docs .
 
 # docker run -itp 3000:3000 --name=docsify -v $(pwd):/docs docsify/docs
+
+# https://cloud.tencent.com/developer/article/1970757

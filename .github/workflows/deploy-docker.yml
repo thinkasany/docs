@@ -1,0 +1,23 @@
+name: Docker Image CI/CD
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  # 构建并上传 Docker镜像
+  build: 
+    runs-on: ubuntu-latest # 依赖的环境      
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Docker Image Tag
+        run: |
+          DOCKER_TAG=$(echo "${{ github.ref }}" | sed -n 's/refs\/tags\/v//p')
+          echo "DOCKER_TAG=${DOCKER_TAG}" >> $GITHUB_ENV
+      - name: Build Image
+        run: |
+          docker build -f Dockerfile -t thinkerwing/docs:${DOCKER_TAG} .
+      - name: Login to Registry
+        run: docker login --username=${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
+      - name: Push Image
+        run: |
+          docker push thinkerwing/docs:${DOCKER_TAG}
