@@ -7,6 +7,9 @@ const sidebar = () => {
   if (location.hash.includes('mytools')) {
     return 'tools_summary.md';
   }
+  if (location.hash.includes('ci')) {
+    return 'ci_summary.md';
+  }
   return 'summary.md';
 };
 window.addEventListener('hashchange', () => {
