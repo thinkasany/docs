@@ -20,6 +20,6 @@
 
 - [我开发的工具](/docs/mytools/README.md)
 
-## ci
+## 🤖️CI 篇-Github Action
 
-- [ci](/docs/ci/github-action.md)
+- [Github Action](/docs/ci/github-action.md)
