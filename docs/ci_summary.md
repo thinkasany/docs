@@ -1,1 +1,2 @@
 - [github-action](/docs/ci/github-action.md)
+- [开源社区的 PR](/docs/ci/pr.md)
