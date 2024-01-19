@@ -10,6 +10,9 @@ const sidebar = () => {
   if (location.hash.includes('ci')) {
     return 'ci_summary.md';
   }
+  if (location.hash.includes('webpack')) {
+    return 'webpack_summary.md';
+  }
   return 'summary.md';
 };
 window.addEventListener('hashchange', () => {
