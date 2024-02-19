@@ -3,3 +3,4 @@
   - [打包原理](/docs/webpack/4.md)
   - [loader](/docs/webpack/loader.md)
   - [plugin](/docs/webpack/plugin.md)
+  - [高阶用法](/docs/webpack/5.md)
