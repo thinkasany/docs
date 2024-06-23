@@ -139,10 +139,12 @@ Promise.allSettled2 = promises => {
       Promise.resolve(item).then(
         res => {
           arr[i] = { status: 'fufilled', value: res };
+          count++;
           if (count === promises.length) resolve(arr);
         },
         err => {
           arr[i] = { status: 'rejected', reason: err };
+          count++;
           if (count === promises.length) resolve(arr);
         }
       );
