@@ -1,0 +1,26 @@
+<style>
+  html{
+    height: 500vh;
+  }
+</style>
+<body>
+  
+</body>
+<script src="./debounce.js"></script>
+<script src="./throttle.js"></script>
+<script src="./debounce2.js"></script>
+<script src="./throttle2.js"></script>
+<script>
+  // 防抖示例
+const debouncedSearch = debounce2(function() {
+  console.log('防抖搜索');
+}, 500);
+window.addEventListener('scroll', debouncedSearch);
+
+// 节流示例
+const throttledScroll = throttle2(function() {
+  console.log('节流行为');
+}, 2000);
+window.addEventListener('scroll', throttledScroll);
+
+</script>
